@@ -21,9 +21,9 @@ def calculate(file, yearAndMonth):
      split = yearAndMonth.split('-')
      year = int(split[0])
      month = int(split[1])
-     with open(file, 'rb') as csvfile:
+     with open(file, 'rt') as csvfile:
           reader = csv.reader(csvfile)
-          reader.next()  # skip header line
+          next(reader)  # skip header line
           for row in reader:
                startDate, endDate = createDates(row)
                startMonth = date(year, month, 1)
