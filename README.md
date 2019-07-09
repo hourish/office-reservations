@@ -3,6 +3,7 @@
 Given a month and a year, the program reads a CSV file and prints what is the revenue for the month and what is the total capacity of the unreserved offices for the month.
 
 Instructions:
+
 Download the file revenueCalculator.py (Python version 3.7.1)
 
 The required arguments for the program:
